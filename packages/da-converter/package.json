@@ -1,0 +1,38 @@
+{
+  "name": "da-converter",
+  "version": "0.1.0",
+  "description": "Simple CLI util for the test problem",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src test"
+  },
+  "bin": {
+    "da-converter": "./index.js"
+  },
+  "engines": {
+    "node": ">=9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fodby/da-test.git"
+  },
+  "keywords": [
+    "test-problem"
+  ],
+  "author": "Nick Ts. <fobdy@yawny.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "geoip2": "^1.0.5",
+    "i18n-iso-countries": "^3.6.2",
+    "is-ip": "^2.0.0",
+    "iso-3166-2.json": "^0.1.2",
+    "pify": "^3.0.0",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-jest": "^21.15.0",
+    "jest": "^22.4.3"
+  }
+}

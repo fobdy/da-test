@@ -1,0 +1,23 @@
+{
+  "name": "da-test-monorepo",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fodby/da-test.git"
+  },
+  "keywords": [
+    "test-problem"
+  ],
+  "scripts": {
+    "build": "lerna run build",
+    "lint": "lerna run lint"
+  },
+  "engines": {
+    "node": ">=9"
+  },
+  "author": "Nick Ts. <fobdy@yawny.ru>",
+  "license": "MIT",
+	"devDependencies": {
+		"lerna": "^2.10.2"
+	}
+}
