@@ -125,7 +125,7 @@ export default class NetworkMap extends Component {
         first = geo.city;
         if (names.country)
           second = names.country;
-        if (names.subdivision && names.subdivision != geo.city)
+        if (names.subdivision && names.subdivision !== geo.city)
           second = `${names.subdivision}, ${second}`;
       }
       else {

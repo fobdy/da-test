@@ -2,6 +2,7 @@ import NetworkMap from '../NetworkMap';
 import React, { Component } from 'react';
 
 import styled from 'styled-components';
+import sampleData from '../data/converted.json';
 
 const FlexContainer = styled.div`
   display: flex;
@@ -23,12 +24,12 @@ class App extends Component {
     this._onMount = clb;
   };
 
-  async componentDidMount() {
+  componentDidMount() {
     if (typeof this._onMount === 'function')
       this._onMount();
-    const points = await fetch('/converted.json')
-      .then(resp => resp.json());
-    this.setState({ points });
+    // const points = await fetch(process.env.PUBLIC_URL + '/da-test/converted.json')
+    //   .then(resp => resp.json());
+    this.setState({ points: sampleData });
   }
 
   render() {
