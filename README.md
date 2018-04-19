@@ -2,13 +2,13 @@
 
 ## Packages
 - `da-converter`: used to lookup geoip db & convert sample data
-- `da-client`: react web app with possible visualisation
+- `da-client`: react web app with possible visualization
 
 ## Caveats
 For using `da-converter` you need to download `GeoLite2-City.mmdb` and place it into `da-converter/data` folder.
 
-All code is tested using latest Node 9.x branch.
-Webapp is tested in latest Chrome/Safari/Firefox @ Mac OS.
+All code was tested using latest Node 9.x branch.
+Webapp was tested in latest Chrome/Safari/Firefox @ Mac OS.
 
 ```bash
 curl -LO http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.mmdb.gz
